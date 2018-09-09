@@ -7,6 +7,7 @@ class CashRegister
     total = 0 
     @total = total 
     @discount = discount
+    apply_discount
   end
   
   def self.total 
@@ -29,7 +30,7 @@ class CashRegister
       puts "There is no discount to apply."
     else 
       @total -= @total * @discount / 100 
-      puts "After the disount the total comes to #{@total}."
+      puts "After the disount, the total comes to #{@total}."
     end
   end
   
