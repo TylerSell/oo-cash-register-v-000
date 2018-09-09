@@ -10,7 +10,7 @@ class CashRegister
   end
   
   def self.total 
-    @@transaction.reduce(0, :+)
+    
   end
   
   def add_item(title, amount, quantity = 1)
