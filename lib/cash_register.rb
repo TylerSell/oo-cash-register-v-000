@@ -13,7 +13,7 @@ class CashRegister
     @@transaction.reduce(0, :+)
   end
   
-  def add_item(title, price, quantity = 1)
+  def add_item(title, amount, quantity = 1)
     info = {}
     info[:name] = title 
     info[:price] = price
