@@ -14,19 +14,12 @@ class CashRegister
   end
   
   def add_item(title, amount, quantity = 1)
-    info = {}
-    info[:name] = title 
-    info[:price] = price
-    info[:quantity] = quantity
     
-    @@cart << info 
-    
-    @total += price * quantity
   end
   
   def apply_discount
-    if @discount == 0 
-      puts "There is no discount to apply."
+    if @discount != 0 
+      
     else 
       @total -= @total * @discount / 100
       puts "After the disount, the total comes to #{@total}."
