@@ -19,7 +19,7 @@ class CashRegister
   
   def apply_discount
     if @discount != 0 
-      
+      self.total = 
     else 
       @total -= @total * @discount / 100
       puts "After the disount, the total comes to #{@total}."
